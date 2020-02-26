@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Rye|Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Masai Students</title>
+    
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>
+        Welcome to Masai Educational Institutes
+      </p>
+    </header>
+    <p id="enter">Enter Student Details Here :</p>
+    <div id="content">
+      <div class="formDiv">
+        <form>
+          <label for="name">Student Name:</label>
+          <input type="text" id="name" />
+
+          <label for="grade">Grade:</label>
+          <select id="grade">
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+          </select>
+
+          <label for="select">Section:</label>
+          <select id="section">
+            <option value="A">A</option>
+            <option value="B">B</option>
+          </select>
+
+          <label for="examType">Exam-Type:</label>
+          <select id="examtype">
+            <option value="prefinal1">Pre-Final1</option>
+            <option value="prefinal2">Pre-Final2</option>
+            <option value="final">Final</option>
+          </select>
+        </form>
+      </div>
+      <hr />
+      <div class="marksDiv">
+        <form class="marksForm">
+          <label for="">Telugu:</label>
+          <input type="text" id="telugu" />
+          <label for="">Hindi:</label>
+          <input type="text" id="hindi" />
+          <label for="">English:</label>
+          <input type="text" id="english" />
+          <label for="">Maths:</label>
+          <input type="text" id="maths" />
+          <label for="">Science:</label>
+          <input type="text" id="science" />
+          <label for="">Social:</label>
+          <input type="text" id="social" />
+          <button type="reset" id="reset">reset</button>
+        </form>
+      </div>
+    </div>
+    <button id="btnSub">SUBMIT</button>
+    <hr />
+    <div class="sortingThings">
+    <div>
+      <h1>
+        Sort Student by Name:
+      </h1>
+      <select id="sortingStudent">
+        <option id="acc" value="acc">Accending order</option>
+        <option id="dec" value="des">Decending order</option>
+      </select>
+    </div>
+      <div>
+            <h1>Select Student Grade Type:</h1>
+            <select id="typeofGrade">
+              <option value="all" id="all">all</option>
+              <option value="X"  id="allX">X</option>
+              <option value="XI"  id="allXI">XI</option>
+              <option value="XII" id="allXII">XII</option>
+           </select>
+      </div>
+      </div>
+    </div>
+    <hr />
+    <div id="table">
+      <table class="tableLoc">
+        <tr>
+          <th>Student Name:</th>
+          <th>Grade:</th>
+          <th>Section:</th>
+          <th>Exam-Type:</th>
+          <th>Telugu:</th>
+          <th>Hindi:</th>
+          <th>English:</th>
+          <th>Maths:</th>
+          <th>Science:</th>
+          <th>Social:</th>
+          <th>Total:</th>
+          <th>Delete:</th>
+        </tr>
+        <tbody id="display"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
