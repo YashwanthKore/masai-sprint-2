@@ -10,7 +10,7 @@ function Studentdetails(name, grade, section, examtype, telugu, hindi, english, 
     this.maths = maths;
     this.science = science;
     this.social = social;
-    this.total = parseInt(telugu) + parseInt(hindi) + parseInt(english) + parseInt(maths) + parseInt(science) + parseInt(social);
+    this.total = total;
 }
 document.getElementById("btnSub").addEventListener('click', details)
 function details(e) {
